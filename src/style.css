@@ -352,3 +352,15 @@ ion-icon {
     /* responsive for md:1000px screen */
     md:left-[calc((756px_+_30px)_*_2)];
 }
+
+
+
+/*-------------------------*\
+  #FOOTER
+\*-------------------------*/
+
+.parallax {
+    @apply min-h-[300px] bg-fixed bg-center bg-cover bg-no-repeat
+    /* responsive for xl:1400px screen */
+    xl:min-h-96;
+}
