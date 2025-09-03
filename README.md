@@ -3,7 +3,6 @@
     <a href="https://github.com/Itssanthoshhere/CozyNest-ecommerce" target="_blank">
       <img src="./assets/images/cozynest-thumbnail.png" alt="Project Banner">
     </a>
-  <br />
 
   <div>
     <img src="https://img.shields.io/badge/-HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5" />
