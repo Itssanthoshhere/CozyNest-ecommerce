@@ -38,6 +38,13 @@ ion-icon {
     @apply h-full w-full object-cover;
 }
 
+.grid-list>li:nth-child(even):not(.off-card) {
+    @apply ms-auto
+    /* responsive for sm:635px screen */
+    sm:ms-0;
+}
+
+
 
 /*-------------------------*\
 #COMPONENTS
