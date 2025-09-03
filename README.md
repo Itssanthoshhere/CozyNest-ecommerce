@@ -1,7 +1,7 @@
 
 <div align="center">
     <a href="https://github.com/Itssanthoshhere/CozyNest-ecommerce" target="_blank">
-      <img src="./assets/images/thumbnail.png" alt="Project Banner">
+      <img src="./assets/images/cozynest-thumbnail.png" alt="Project Banner">
     </a>
   <br />
 
