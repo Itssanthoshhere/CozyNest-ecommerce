@@ -35,6 +35,12 @@ $dropdownToggler.addEventListener('click', function () {
     toggleElem($dropdown);
 });
 
+// close dropdown when clicking on dropdown links
+const $dropdownLinks = $dropdown.querySelectorAll('a');
+addEventOnElem($dropdownLinks, 'click', function () {
+    $dropdown.classList.remove('active');
+});
+
 // toggle cart
 $cartToggler.addEventListener('click', function () {
     toggleElem($cartModal);
