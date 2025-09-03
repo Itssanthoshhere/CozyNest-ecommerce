@@ -35,7 +35,7 @@ ion-icon {
 }
 
 .img-cover {
-    @apply h-full w-full object-cover;
+    @apply object-cover w-full h-full;
 }
 
 .grid-list>li:nth-child(even):not(.off-card) {
@@ -126,7 +126,7 @@ ion-icon {
 }
 
 .slider-item {
-    @apply bg-papaya_whip absolute top-0 left-0 overflow-hidden;
+    @apply absolute top-0 left-0 overflow-hidden bg-papaya_whip;
     transition: left 0.5s cubic-bezier(0.645, 0.045, 0.354, 1);
 }
 
@@ -176,7 +176,16 @@ ion-icon {
  */
 
 .arrow-button {
-    @apply h-10 w-10 grid place-items-center border border-solid border-butterscotch rounded-sm;
+    @apply grid w-10 h-10 border border-solid rounded-sm place-items-center border-butterscotch;
+}
+
+
+/**
+ * Avatar
+ */
+
+.avatar {
+    @apply w-12 h-12 rounded-full shrink-0;
 }
 
 
@@ -207,7 +216,7 @@ ion-icon {
 }
 
 .navbar {
-    @apply bg-licorice fixed right-0 top-0 z-50 h-screen w-80 translate-x-80 pt-20 duration-200 ease-inExpo invisible;
+    @apply fixed top-0 right-0 z-50 invisible h-screen pt-20 duration-200 bg-licorice w-80 translate-x-80 ease-inExpo;
 }
 
 @media (min-width: 1000px) {
@@ -268,7 +277,7 @@ ion-icon {
 */
 
 .overlay {
-    @apply fixed inset-0 z-40 ease-inExpo duration-75 invisible opacity-0;
+    @apply fixed inset-0 z-40 invisible duration-75 opacity-0 ease-inExpo;
 }
 
 .overlay.active {
@@ -282,7 +291,7 @@ ion-icon {
 \*-------------------------*/
 
 .hero {
-    @apply bg-caf_noir relative pt-20;
+    @apply relative pt-20 bg-caf_noir;
 }
 
 @media (min-width: 1200px) {
@@ -307,5 +316,39 @@ ion-icon {
 }
 
 .brand-list-item {
-    @apply grid place-content-center p-2 h-14 min-w-32 rounded-md cursor-pointer;
+    @apply grid p-2 rounded-md cursor-pointer place-content-center h-14 min-w-32;
+}
+
+
+
+/*-------------------------*\
+  #TESTIMONIALS
+\*-------------------------*/
+
+.testimonial-card:nth-child(1) {
+    @apply left-[calc(-450px_+_-20px)]
+    /* responsive for sm:635px screen */
+    sm:left-[calc(-580px_+_-30px)]
+    /* responsive for md:1000px screen */
+    md:left-[calc(-756px_+_-30px)];
+}
+
+.testimonial-card:nth-child(2) {
+    @apply left-0;
+}
+
+.testimonial-card:nth-child(3) {
+    @apply left-[calc(450px_+_20px)]
+    /* responsive for sm:635px screen */
+    sm:left-[calc(580px_+_30px)]
+    /* responsive for md:1000px screen */
+    md:left-[calc(756px_+_30px)];
+}
+
+.testimonial-card:nth-child(4) {
+    @apply left-[calc((450px_+_20px)_*_2)]
+    /* responsive for sm:635px screen */
+    sm:left-[calc((580px_+_30px)_*_2)]
+    /* responsive for md:1000px screen */
+    md:left-[calc((756px_+_30px)_*_2)];
 }
